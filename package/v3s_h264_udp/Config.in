@@ -1,0 +1,9 @@
+config BR2_PACKAGE_V3S_H264_UDP
+    bool "V3s H.264 UDP streamer"
+    default n
+    select BR2_PACKAGE_LIBV4L
+    select BR2_PACKAGE_LIBCEDARC
+    select BR2_PACKAGE_LIBCEDARC_ENCODER
+    help
+      Demo program for capturing camera video and streaming over UDP
+      using Allwinner V3s hardware H.264 encoder.
