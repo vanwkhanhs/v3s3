@@ -5,7 +5,7 @@
 ################################################################################
 
 H264ENC_DEMO_VERSION = master
-H264ENC_DEMO_SITE = $(call github,Unturned3,h264enc_demo,$(H264ENC_DEMO_VERSION))
+H264ENC_DEMO_SITE = $(call github,vanwkhanhs,h264enc_demo,$(H264ENC_DEMO_VERSION))
 H264ENC_DEMO_DEPENDENCIES = libcedarc libv4l
 
 define H264ENC_DEMO_BUILD_CMDS
