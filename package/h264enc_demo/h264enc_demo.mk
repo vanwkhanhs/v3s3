@@ -4,9 +4,10 @@
 #
 ################################################################################
 
-H264ENC_DEMO_VERSION = master
-H264ENC_DEMO_SITE = $(call github,Unturned3,h264enc_demo,$(H264ENC_DEMO_VERSION))
-H264ENC_DEMO_DEPENDENCIES = libcedarc libv4l
+V3S_H264_UDP_VERSION = master
+V3S_H264_UDP_SITE = https://github.com/vanwkhanhs/h264enc_demo.git
+V3S_H264_UDP_SITE_METHOD = git
+V3S_H264_UDP_DEPENDENCIES = libcedarc libv4l
 
 define H264ENC_DEMO_BUILD_CMDS
 	$(MAKE) CC="$(TARGET_CC)" LD="$(TARGET_LD)" -C $(@D) all
@@ -17,4 +18,3 @@ define H264ENC_DEMO_INSTALL_TARGET_CMDS
 endef
 
 $(eval $(generic-package))
-
