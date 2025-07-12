@@ -23,7 +23,7 @@
 	status = "disabled";
 };
 
-/*
+
 &codec {
 	allwinner,audio-routing =
 		"Headphone", "HP",
@@ -32,7 +32,7 @@
 		"Mic",  "HBIAS";
 	status = "okay";
 };
-*/
+
 
 &emac {
 	phy-handle = <&int_mii_phy>;
@@ -41,7 +41,7 @@
 	status = "okay";
 };
 
-/*
+
 &lradc {
 	vref-supply = <&reg_vcc3v0>;
 	status = "okay";
@@ -74,5 +74,5 @@
 		voltage = <800000>;
 	};
 };
-*/
+
 
